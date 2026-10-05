@@ -1,0 +1,2073 @@
+{
+  "version": "20260304",
+  "runtime": "node",
+  "framework": "nextjs",
+  "runtimeVersion": {
+    "resolved": "24"
+  },
+  "dependencies": [
+    {
+      "name": "@cloudflare/next-on-pages",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^1.13.16",
+      "resolved": "1.13.16",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/postcss",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^4.3.3",
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@types/node",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^26.6.4",
+      "resolved": "26.6.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@types/react",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^19.3.0",
+      "resolved": "19.3.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@types/react-dom",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^19.3.0",
+      "resolved": "19.3.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "next",
+      "type": "direct",
+      "scopes": [
+        "prod"
+      ],
+      "requested": "^16.3.8",
+      "resolved": "16.3.8",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "postcss",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^8.5.28",
+      "resolved": "8.5.28",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "react",
+      "type": "direct",
+      "scopes": [
+        "prod"
+      ],
+      "requested": "^19.3.0",
+      "resolved": "19.3.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "react-dom",
+      "type": "direct",
+      "scopes": [
+        "prod"
+      ],
+      "requested": "^19.3.0",
+      "resolved": "19.3.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "tailwindcss",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^4.3.3",
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "typescript",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^7.0.2",
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "vitest",
+      "type": "direct",
+      "scopes": [
+        "dev"
+      ],
+      "requested": "^5.0.3",
+      "resolved": "5.0.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "zod",
+      "type": "direct",
+      "scopes": [
+        "prod"
+      ],
+      "requested": "^4.6.5",
+      "resolved": "4.6.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@alloc/quick-lru",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "5.3.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@cloudflare/workerd-darwin-64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "1.20250718.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@cloudflare/workerd-darwin-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "1.20250718.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@cloudflare/workerd-linux-64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "1.20250718.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@cloudflare/workerd-linux-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "1.20250718.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@cloudflare/workerd-windows-64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "1.20250718.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@cspotcode/source-map-support",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "0.8.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@emnapi/runtime",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.11.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@esbuild/android-arm",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@esbuild/linux-loong64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@fastify/busboy",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.1.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/colour",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.1.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-darwin-arm64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-darwin-x64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-freebsd-wasm32",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-libvips-darwin-arm64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.3.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-libvips-darwin-x64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.3.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-arm",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.3.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-arm64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.3.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-ppc64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.3.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-riscv64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.3.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-s390x",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.3.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-libvips-linux-x64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.3.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-libvips-linuxmusl-arm64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.3.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-libvips-linuxmusl-x64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "1.3.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-linux-arm",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-linux-arm64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-linux-ppc64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-linux-riscv64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-linux-s390x",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-linux-x64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-linuxmusl-arm64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-linuxmusl-x64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-wasm32",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-webcontainers-wasm32",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-win32-arm64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-win32-ia32",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@img/sharp-win32-x64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@jridgewell/gen-mapping",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "0.3.13",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@jridgewell/remapping",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.3.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@jridgewell/resolve-uri",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "3.1.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@jridgewell/sourcemap-codec",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "1.6.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@jridgewell/trace-mapping",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "0.3.31",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@next/env",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "16.3.8",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@next/swc-darwin-arm64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "16.3.8",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@next/swc-darwin-x64",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "16.3.8",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@next/swc-linux-arm64-gnu",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "16.3.8",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@next/swc-linux-arm64-musl",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "16.3.8",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@next/swc-linux-x64-gnu",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "16.3.8",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@next/swc-linux-x64-musl",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "16.3.8",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@next/swc-win32-arm64-msvc",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "16.3.8",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@next/swc-win32-x64-msvc",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "16.3.8",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@swc/helpers",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "0.5.23",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/node",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-android-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-darwin-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-darwin-x64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-freebsd-x64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-arm-gnueabihf",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-arm64-gnu",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-arm64-musl",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-x64-gnu",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-x64-musl",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-wasm32-wasi",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-win32-arm64-msvc",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@tailwindcss/oxide-win32-x64-msvc",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "4.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@types/chai",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "5.2.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@types/deep-eql",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "4.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@types/estree",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "1.0.9",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-aix-ppc64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-darwin-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-darwin-x64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-freebsd-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-freebsd-x64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-linux-arm",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-linux-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-linux-loong64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-linux-mips64el",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-linux-ppc64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-linux-riscv64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-linux-s390x",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-linux-x64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-netbsd-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-netbsd-x64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-openbsd-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-openbsd-x64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-sunos-x64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-win32-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@typescript/typescript-win32-x64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "7.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@vitest/mocker",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "5.0.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "@vitest/spy",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "5.0.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "acorn",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "8.18.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "acorn-walk",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "8.3.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "anymatch",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "3.1.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "argparse",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.0.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "as-table",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "1.0.55",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "assertion-error",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.0.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "ast-types",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "0.14.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "baseline-browser-mapping",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "2.11.27",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "binary-extensions",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.3.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "braces",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "3.0.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "caniuse-lite",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "1.0.30001814",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "chai",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "6.3.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "chalk",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "5.6.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "chokidar",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "3.6.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "client-only",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "0.0.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "commander",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "11.1.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "cookie",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "0.5.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "csstype",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "3.2.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "data-uri-to-buffer",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "detect-libc",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "2.1.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "enhanced-resolve",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "5.26.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "es-module-lexer",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.3.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-android-64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-android-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-darwin-64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-darwin-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-freebsd-64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-freebsd-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-linux-32",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-linux-64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-linux-arm",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-linux-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-linux-mips64le",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-linux-ppc64le",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-linux-riscv64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-linux-s390x",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-netbsd-64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-openbsd-64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-sunos-64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-windows-32",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-windows-64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "esbuild-windows-arm64",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "0.15.18",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "estree-walker",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "3.0.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "exit-hook",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.2.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "expect-type",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "1.4.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "fdir",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "6.5.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "fill-range",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "7.1.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "fsevents",
+      "type": "transitive",
+      "scopes": [
+        "dev",
+        "optional"
+      ],
+      "resolved": "2.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "get-source",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.0.12",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "glob-parent",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "5.1.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "glob-to-regexp",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "0.4.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "graceful-fs",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "4.2.11",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "is-binary-path",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.1.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "is-extglob",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.1.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "is-glob",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "4.0.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "is-number",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "7.0.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "jiti",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.7.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "js-yaml",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "4.3.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "magic-string",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "1.4.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "miniflare",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "3.20250718.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "mustache",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "4.2.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "nanoid",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "3.3.19",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "normalize-path",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "3.0.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "obug",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.2.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "package-manager-manager",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "0.2.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "pcre-to-regexp",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "1.1.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "picocolors",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "1.1.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "picomatch",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "4.0.7",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "printable-characters",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "1.0.42",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "readdirp",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "3.6.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "reghex",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "1.0.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "scheduler",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "0.28.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "semver",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "7.8.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "sharp",
+      "type": "transitive",
+      "scopes": [
+        "optional"
+      ],
+      "resolved": "0.35.5",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "shellac",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "0.8.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "source-map",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "0.6.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "source-map-js",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "1.2.2",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "stacktracey",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.2.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "std-env",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "4.3.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "stoppable",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "1.1.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "styled-jsx",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "5.1.6",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "tapable",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "2.3.3",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "tinybench",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "6.2.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "tinyexec",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "1.3.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "tinyglobby",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "0.2.17",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "to-regex-range",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "5.0.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "tslib",
+      "type": "transitive",
+      "scopes": [
+        "prod"
+      ],
+      "resolved": "2.8.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "undici",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "5.29.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "undici-types",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "8.9.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "why-is-node-running",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "3.2.1",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "workerd",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "1.20250718.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "ws",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "8.18.0",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    },
+    {
+      "name": "youch",
+      "type": "transitive",
+      "scopes": [
+        "dev"
+      ],
+      "resolved": "3.3.4",
+      "source": "registry",
+      "sourceUrl": "http://mirrors.tencentyun.com"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "type": "Prerender",
+  "expiration": false,
+  "initialMetadata": {
+    "compute": "static",
+    "htmlSize": 12056
+  },
+  "group": 9,
+  "bypassToken": "26ff9d076d9e5909c357aa709528d52a",
+  "experimentalBypassFor": [
+    {
+      "type": "header",
+      "key": "next-action"
+    },
+    {
+      "type": "header",
+      "key": "content-type",
+      "value": "multipart/form-data;.*"
+    }
+  ],
+  "fallback": {
+    "type": "FileFsRef",
+    "mode": 33188,
+    "fsPath": "peringkat.prerender-fallback.html"
+  },
+  "initialHeaders": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/demo/layout,_N_T_/demo/peringkat/layout,_N_T_/demo/peringkat/page,_N_T_/demo/peringkat",
+    "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch"
+  },
+  "allowQuery": [],
+  "allowHeader": [
+    "host",
+    "x-matched-path",
+    "x-prerender-revalidate",
+    "x-prerender-revalidate-if-generated",
+    "x-next-revalidated-tags",
+    "x-next-revalidate-tag-token"
+  ]
+}

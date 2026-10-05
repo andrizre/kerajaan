@@ -41,9 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className={`${garamond.variable} ${sourceSans.variable} paper min-h-dvh`}>
-        <TopBar />
-        <main className="mx-auto w-full max-w-3xl px-4 pb-24 pt-4 md:pb-8">{children}</main>
-        <BottomNav />
+        {children}
       </body>
     </html>
   );
