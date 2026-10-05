@@ -2,6 +2,8 @@
 
 Game teks berbasis web: kelola kerajaan kecil dari desa menjadi benteng — ekonomi idle, pembangunan bergaya Age of Empires/Stronghold, penaklukan bergaya Torn. Bahasa antarmuka: Indonesia.
 
+**Main sekarang (demo statis, save di browser):** https://kronik-kerajaan-demo.mewing-moose-be4.workers.dev/demo/
+
 ## Menjalankan
 
 ```bash
