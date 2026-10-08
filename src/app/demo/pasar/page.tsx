@@ -1,7 +1,7 @@
 "use client";
 
 import * as B from "@config/balance";
-import { DemoActionButton } from "@/components/DemoActionButton";
+import { DemoMarketTradeControls } from "@/components/MarketTradeControls";
 import { useDemo } from "@/components/DemoProvider";
 
 const fmt = (n: number) => Math.floor(n).toLocaleString("id-ID");
@@ -27,10 +27,7 @@ export default function DemoPasar() {
                 <h2 className="font-title text-lg capitalize"><span className="rubric">{res.charAt(0)}</span>{res.slice(1)}</h2>
                 <span className="text-xs data-olive">harga {p.price.toFixed(2)} (dasar {base}) · stok {fmt(st.resources[res])}</span>
               </div>
-              <div className="mt-2 flex flex-wrap gap-2">
-                <DemoActionButton action="market_trade" payload={{ resource: res, amount: 50, choiceId: "sell" }} className="btn-ghost text-sm">Jual 50</DemoActionButton>
-                <DemoActionButton action="market_trade" payload={{ resource: res, amount: 50, choiceId: "buy" }} className="btn-ghost text-sm">Beli 50</DemoActionButton>
-              </div>
+              <DemoMarketTradeControls resource={res} />
             </section>
           );
         })}

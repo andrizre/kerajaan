@@ -1,6 +1,6 @@
 import { marketView } from "@/lib/view";
 import * as B from "@config/balance";
-import { ActionButton } from "@/components/ActionButton";
+import { MarketTradeControls } from "@/components/MarketTradeControls";
 
 export default function PasarPage() {
   const v = marketView();
@@ -24,14 +24,7 @@ export default function PasarPage() {
                 <h2 className="font-title text-lg capitalize"><span className="rubric">{res.charAt(0)}</span>{res.slice(1)}</h2>
                 <span className="text-xs data-olive">harga kini {harga.toFixed(2)} (dasar {base}) · stok {Math.floor(v.state.resources[res]).toLocaleString("id-ID")}</span>
               </div>
-              <div className="mt-2 flex flex-wrap gap-2">
-                <ActionButton action="market_trade" payload={{ resource: res, amount: 50, choiceId: "sell" }} className="btn-ghost text-sm">
-                  Jual 50
-                </ActionButton>
-                <ActionButton action="market_trade" payload={{ resource: res, amount: 50, choiceId: "buy" }} className="btn-ghost text-sm">
-                  Beli 50
-                </ActionButton>
-              </div>
+              <MarketTradeControls resource={res} />
             </section>
           );
         })}
