@@ -335,6 +335,14 @@ export function renderWarChronicle(
   return lines.join(" ");
 }
 
+// ---------- Pertahanan NPC ----------
+// NPC tidak meminjam tembok/menara pemain; pertahanannya deterministik dari kekuatan sendiri.
+export function npcDefenseLevels(power: number): { wallLevel: number; towerLevel: number } {
+  const wallLevel = Math.min(10, Math.floor(power / 200));
+  const towerLevel = power >= 1000 ? Math.min(6, Math.floor((power - 1000) / 400)) : 0;
+  return { wallLevel, towerLevel };
+}
+
 // ---------- Skor ----------
 
 export function computeScore(

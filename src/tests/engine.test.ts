@@ -5,7 +5,7 @@ import {
   warehouseCapacity, housingCapacity, productionPerHour, happinessFactor,
   taxGoldPerHour, foodUpkeepPerHour, advance, canAdvanceEra,
   attackerPower, defenderPower, resolveBattle, renderWarChronicle,
-  computeScore, marketPrices, maxBuildingLevelAllowed,
+  computeScore, marketPrices, maxBuildingLevelAllowed, npcDefenseLevels,
 } from "@/lib/game/engine";
 
 const lv = (o: Record<string, number>) => o;
@@ -181,6 +181,16 @@ describe("skor & pasar", () => {
 describe("batas level", () => {
   it("balai kota lv X membatasi bangunan lain ke X+1", () => {
     expect(maxBuildingLevelAllowed(lv({ balai_kota: 2 }))).toBe(3);
+  });
+});
+
+describe("pertahanan NPC", () => {
+  it("deterministik dari kekuatan NPC, bukan bangunan pemain", () => {
+    expect(npcDefenseLevels(60)).toEqual({ wallLevel: 0, towerLevel: 0 });
+    expect(npcDefenseLevels(700)).toEqual({ wallLevel: 3, towerLevel: 0 });
+    expect(npcDefenseLevels(2200)).toEqual({ wallLevel: 10, towerLevel: 3 });
+    // deterministik: input sama → output sama
+    expect(npcDefenseLevels(1300)).toEqual(npcDefenseLevels(1300));
   });
 });
 

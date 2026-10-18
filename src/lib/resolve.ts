@@ -7,6 +7,7 @@ import {
   computeScore,
   eraName,
   marketPrices,
+  npcDefenseLevels,
   renderWarChronicle,
   resolveBattle,
   type KingdomState,
@@ -199,7 +200,8 @@ export function resolveBattleAtReturn(marchId: number): { report: string; title:
   if (!npc) return null;
 
   const attackerUnits = JSON.parse(m.units_json);
-  const state = loadState(db).state;
+  // Pertahanan NPC ditentukan kekuatannya sendiri — bukan tembok/menara pemain.
+  const { wallLevel, towerLevel } = npcDefenseLevels(npc.power);
   const npcResources = zeroResources();
   // sumber daya NPC proporsional kekuatannya
   for (const r of B.RESOURCES) npcResources[r] = Math.floor(npc.power * (r === "emas" ? 2 : 8));
@@ -207,8 +209,8 @@ export function resolveBattleAtReturn(marchId: number): { report: string; title:
   const result = resolveBattle({
     attackerUnits,
     npcTroops: npc.troops,
-    wallLevel: state.levels["tembok"] ?? 0,
-    towerLevel: state.levels["menara_jaga"] ?? 0,
+    wallLevel,
+    towerLevel,
     npcResources,
   });
 
